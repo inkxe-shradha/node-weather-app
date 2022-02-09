@@ -29,7 +29,7 @@ const loadWeatherReport = (weatherAddresses) => {
                 pRes.data.weather_cast.temperature
               } c and it feels like ${
                 pRes.data.weather_cast.feelslike
-              } c and humidity is ${pRes.data.weather_cast.humidity}.
+              } c and humidity is ${pRes.data.weather_cast.humidity}. The wind speed is around ${pRes.data.weather_cast.wind_speed}, the visibility is ${pRes.data.weather_cast.visibility} and the pressure is ${pRes.data.weather_cast.pressure} M 
                     </p>
                 </div>
                 `
