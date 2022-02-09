@@ -11,6 +11,8 @@ const {
 } = require("../src/utils/geoCode.js");
 
 const app = express(); // Used for generating the server
+// Setting of port number
+const port = process.env.PORT || 3000;
 
 // console.log('Directory Name', __dirname);
 // console.log('path Name', path.join(__dirname, '../public'));
@@ -118,6 +120,6 @@ app.get('*', (req, res) => {
 // })
 
 // Start the server and listen to the port
-app.listen(3000, () => {
-    console.log('Server is up on port 3000');
-})
+app.listen(port, () => {
+  console.log("Server is up on port " + port);
+});
